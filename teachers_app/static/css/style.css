@@ -1,0 +1,318 @@
+/*共通*/
+#header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 91, 181, 0.671);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+    padding-left: 150px;
+}
+
+#h1_header{
+    color: white;
+    padding-left: 20px;
+}
+
+#page_name{
+    padding-left: 150px;
+}
+
+body{
+    padding-top: 90px;
+    position: relative;
+    padding-bottom: 30px;
+    margin: 0;
+}
+.content{
+    min-height: calc(100vh - 30px);
+}
+.btn{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 30px 10px 30px 10px;
+	padding: 10px 150px;
+	color: #388ded;
+	font-weight: bold;
+	letter-spacing: 0.5pt;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #388ded;
+	cursor: pointer;
+} 
+
+.btn:hover{
+    color: #ffffff;
+    background-color: #388ded;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(171, 213, 255, 0.671);
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
+
+#contact_state{
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+/*index.html*/
+/*ラジオボタンの編集*/
+input[type=radio]{
+    display: none;
+}
+input[type="radio"]:checked + label {
+    background: #31A9EE;/* マウス選択時の背景色を指定する */
+    color: #ffffff; /* マウス選択時のフォント色を指定する */
+    border: 2px solid #006DD9;/* ボックスの境界線を実線で指定する */
+}
+/*2文字*/
+.label2 {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 0 10px 5px 10px; /* ボックス外側の余白を指定する */
+    width: 60px; /* ボックスの横幅を指定する */
+    height: 35px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    padding-bottom: 7px;
+    color: #6d6363; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #6d6363;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+/*3文字*/
+.label3 {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 0 10px 5px 10px; /* ボックス外側の余白を指定する */
+    width: 75px; /* ボックスの横幅を指定する */
+    height: 35px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    padding-bottom: 7px;
+    color: #6d6363; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #6d6363;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+/*4文字*/
+.label4 {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 0 10px 5px 10px; /* ボックス外側の余白を指定する */
+    width: 100px; /* ボックスの横幅を指定する */
+    height: 35px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    padding-bottom: 7px;
+    color: #6d6363; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #6d6363;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+/*5文字*/
+.label5 {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 0 10px 5px 10px; /* ボックス外側の余白を指定する */
+    width: 125px; /* ボックスの横幅を指定する */
+    height: 35px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    padding-bottom: 7px;
+    color: #6d6363; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #6d6363;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+/*6文字*/
+.label6 {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 0 10px 5px 10px; /* ボックス外側の余白を指定する */
+    width: 150px; /* ボックスの横幅を指定する */
+    height: 35px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    padding-bottom: 7px;
+    color: #6d6363; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #6d6363;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+.label:hover {
+    background-color: #E2EDF9; /* マウスオーバー時の背景色を指定する */
+}
+
+form{
+    padding: 0px 10px 5px 10px;
+    width: 700px;
+    text-align: center;
+}
+
+#search_field{
+    margin: 0 auto;
+}
+
+.search_title{
+    text-align: left;
+    margin: 0;
+}
+
+.search_condition{
+    width: 1200px;
+    text-align: left;
+    padding: 5px 0 10px 5px;
+}
+
+.radio_button{
+    padding: 0px 10px 0px 10px;
+}
+
+#button{
+    padding: 10px 10px 0px 10px;
+    margin: auto;
+}
+
+/*search.html*/
+
+#search{
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+
+#content{
+    border: 1px solid #333;
+    padding: 0 10px 0 10px;
+    width: 640px;
+}
+
+#information{
+    border: 1px solid #333;
+    padding: 0 10px 0 10px;
+    width: 120px;
+}
+
+.detail{
+    text-align: left;
+}
+
+#img{
+    border: 1px solid #333;
+    padding: 0 10px 0 10px;
+}
+
+#app_name{
+}
+
+#app_money{
+}
+
+#app_value{
+    display: inline;
+    padding: 1em 0 1em 0;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/*星評価の実装*/
+.star-rating{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC; /* グレーカラー 自由に設定化 */
+    /*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star-rating:before, .star-rating:after{
+    content: '★★★★★';
+}
+
+.star-rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32; /* イエローカラー 自由に設定化 */
+}
+
+.star-rating[data-rate="5.0"]:after{ width: 100%; } /* 星5 */
+.star-rating[data-rate="4.9"]:after{ width: 100%; } /* 星5 */
+.star-rating[data-rate="4.8"]:after{ width: 100%; } /* 星5 */
+.star-rating[data-rate="4.7"]:after{ width: 90%; } /* 星4.5 */
+.star-rating[data-rate="4.6"]:after{ width: 90%; } /* 星4.5 */
+.star-rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star-rating[data-rate="4.4"]:after{ width: 90%; } /* 星4.5 */
+.star-rating[data-rate="4.3"]:after{ width: 90%; } /* 星4.5 */
+.star-rating[data-rate="4.2"]:after{ width: 80%; } /* 星4 */
+.star-rating[data-rate="4.1"]:after{ width: 80%; } /* 星4 */
+.star-rating[data-rate="4.0"]:after{ width: 80%; } /* 星4 */
+.star-rating[data-rate="3.9"]:after{ width: 80%; } /* 星4 */
+.star-rating[data-rate="3.8"]:after{ width: 80%; } /* 星4 */
+.star-rating[data-rate="3.7"]:after{ width: 70%; } /* 星3.5 */
+.star-rating[data-rate="3.6"]:after{ width: 70%; } /* 星3.5 */
+.star-rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star-rating[data-rate="3.4"]:after{ width: 70%; } /* 星3.5 */
+.star-rating[data-rate="3.3"]:after{ width: 70%; } /* 星3.5 */
+.star-rating[data-rate="3.2"]:after{ width: 60%; } /* 星3 */
+.star-rating[data-rate="3.1"]:after{ width: 60%; } /* 星3 */
+.star-rating[data-rate="3.0"]:after{ width: 60%; } /* 星3 */
+.star-rating[data-rate="2.9"]:after{ width: 60%; } /* 星3 */
+.star-rating[data-rate="2.8"]:after{ width: 60%; } /* 星3 */
+.star-rating[data-rate="2.7"]:after{ width: 50%; } /* 星2.5 */
+.star-rating[data-rate="2.6"]:after{ width: 50%; } /* 星2.5 */
+.star-rating[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
+.star-rating[data-rate="2.4"]:after{ width: 50%; } /* 星2.5 */
+.star-rating[data-rate="2.3"]:after{ width: 50%; } /* 星2.5 */
+.star-rating[data-rate="2.2"]:after{ width: 40%; } /* 星2 */
+.star-rating[data-rate="2.1"]:after{ width: 40%; } /* 星2 */
+.star-rating[data-rate="2.0"]:after{ width: 40%; } /* 星2 */
+.star-rating[data-rate="1.9"]:after{ width: 40%; } /* 星2 */
+.star-rating[data-rate="1.8"]:after{ width: 40%; } /* 星2 */
+.star-rating[data-rate="1.7"]:after{ width: 30%; } /* 星1.5 */
+.star-rating[data-rate="1.6"]:after{ width: 30%; } /* 星1.5 */
+.star-rating[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
+.star-rating[data-rate="1.4"]:after{ width: 30%; } /* 星1.5 */
+.star-rating[data-rate="1.3"]:after{ width: 30%; } /* 星1.5 */
+.star-rating[data-rate="1.2"]:after{ width: 20%; } /* 星1 */
+.star-rating[data-rate="1.1"]:after{ width: 20%; } /* 星1 */
+.star-rating[data-rate="1.0"]:after{ width: 20%; } /* 星1 */
+.star-rating[data-rate="0.9"]:after{ width: 20%; } /* 星1 */
+.star-rating[data-rate="0.8"]:after{ width: 20%; } /* 星1 */
+.star-rating[data-rate="0.7"]:after{ width: 10%; } /* 星0.5 */
+.star-rating[data-rate="0.6"]:after{ width: 10%; } /* 星0.5 */
+.star-rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
+.star-rating[data-rate="0.4"]:after{ width: 10%; } /* 星0.5 */
+.star-rating[data-rate="0.3"]:after{ width: 10%; } /* 星0.5 */
+.star-rating[data-rate="0.2"]:after{ width: 0%; } /* 星0 */
+.star-rating[data-rate="0.1"]:after{ width: 0%; } /* 星0 */

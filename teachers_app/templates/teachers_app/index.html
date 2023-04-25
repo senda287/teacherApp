@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+    </head>
+    <body>
+        <div class="content">
+        <header id="header">
+            <img src="../../static/images/logo.png" id="logo">
+            <div id="h1_header"><font size="6">先生のアプリ</font></div>
+        </header>
+        <h2 id="page_name">条件を選択</h2>
+        <form action="{% url 'search' %}" method="post" id="search_field">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td class="search_title">
+                        <font size="4"><b>学校</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_condition">
+                        <input type="radio" name="schoolInput" value="" id="noSchoolInput" checked><label for="noSchoolInput" class="label4"><font size="4">指定なし</font></label>
+                        <input type="radio" name="schoolInput" value="elemecd Documents/nt" id="element"><label for="element" class="label3"><font size="4">小学校</font></label>
+                        <input type="radio" name="schoolInput" value="junior" id="junior"><label for="junior" class="label3"><font size="4">中学校</font></label>
+                        <input type="radio" name="schoolInput" value="high" id="high"><label for="high" class="label2"><font size="4">高校</font></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_title">
+                        <font size="4"><b>ジャンル</b></font>
+                    </td>
+                </tr>
+                <tr>    
+                    <td class="search_condition">
+                        <input type="radio" name="subjectInput" value="japanese" id="japanese" checked><label for="japanese" class="label2"><font size="4">国語</font></label>
+                        <input type="radio" name="subjectInput" value="math" id="math"><label for="math" class="label2"><font size="4">算数</font></label>
+                        <input type="radio" name="subjectInput" value="science" id="science"><label for="science" class="label2"><font size="4">理科</font></label>
+                        <input type="radio" name="subjectInput" value="society" id="society"><label for="society" class="label2"><font size="4">社会</font></label>
+                        <input type="radio" name="subjectInput" value="other" id="other"><label for="other" class="label3"><font size="4">その他</font></label>
+                        <input type="radio" name="subjectInput" value="management" id="management"><label for="management" class="label5"><font size="4">クラス運営</font></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_title">
+                        <font size="4"><b>金額</b></font>
+                    </td>
+                </tr>
+                <tr>    
+                    <td class="search_condition">
+                        <input type="radio" name="moneyInput" value="10000" id="10000" checked><label for="10000" class="label4"><font size="4">指定なし</font></label>
+                        <input type="radio" name="moneyInput" value="1" id="1"><label for="1" class="label2"><font size="4">無料</font></label>
+                        <input type="radio" name="moneyInput" value="1000" id="1000"><label for="1000" class="label5"><font size="4">1000円以下</font></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_title">
+                        <font size="4"><b>評価</b></font>
+                    </td>
+                </tr>
+                <tr>    
+                    <td class="search_condition">
+                        <input type="radio" name="valueInput" value="0" id="0" checked><label for="0" class="label4"><font size="4">指定なし</font></label>
+                        <input type="radio" name="valueInput" value="2" id="2"><label for="2" class="label3"><font size="4">２以上</font></label>
+                        <input type="radio" name="valueInput" value="3" id="3"><label for="3" class="label3"><font size="4">３以上</font></label>
+                        <input type="radio" name="valueInput" value="4" id="4"><label for="4" class="label3"><font size="4">４以上</font></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_title">
+                        <font size="4"><b>機種</b></font>
+                    </td>
+                </tr>
+                <tr>    
+                    <td class="search_condition">
+                        <input type="radio" name="machineInput" value="" id="noMachineInput" checked><label for="noMachineInput" class="label4"><font size="4">指定なし</font></label>
+                        <input type="radio" name="machineInput" value="iOS" id="iOS"><label for="iOS" class="label2"><font size="4">iOS</font></label>
+                        <input type="radio" name="machineInput" value="Android" id="Android"><label for="Android" class="label4"><font size="4">Android</font></label>
+                    </td>
+                </tr>
+            </table>
+            <div id="buttom">
+                <button type="input" class="btn">この条件で検索</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

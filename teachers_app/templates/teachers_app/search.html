@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+  </head>
+  <body>
+    <div class="content">
+    <a href="..">
+    <header id="header">
+      <img src="../../static/images/logo.png" id="logo">
+      <h1 id="h1_header"><i>先生のアプリ</i></h1>
+    </header>
+    </a>
+    <h2 id="page_name">検索結果</h2>
+    <table id="search">
+      <tbody>
+        {% for app in app %}
+          <tr>
+              <td id="img"><img src="{{app.images}}" alt="" width="80" height="80"/></td>
+              <td id="content">
+                <p id="app_name"><a href="{{app.link}}" target="_blank" rel="noreferrer noopener">{{app.app_name}}</a>
+                / {{app.money}} 円
+                / <span class="star-rating" data-rate="{{app.value}}"></span>({{app.value}})</p>
+                <p id="detail">{{app.detail}}</p>
+              </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="button"><a href="../" class="btn">検索画面へ</a></div>
+    </div>
+  </body>
+</html>
